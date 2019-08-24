@@ -11,6 +11,21 @@
 docker pull fullaxx/gnump3d
 ```
 
+## Volume Options
+Media: Drop your media in /srv/docker/media/
+```
+-v /srv/docker/media:/media
+```
+Logs: Your logs will reside in /srv/docker/log/
+```
+-v /srv/docker/log:/log
+```
+Cache: During the indexing process song.tags will reside in /srv/docker/cache/ \
+Also, A serving directory will be created here to keep real-time data
+```
+-v /srv/docker/cache:/cache
+```
+
 ## Run the image on port 80
 ```
 docker run -d -p 80:8888 -v /srv/docker/media:/media fullaxx/gnump3d
