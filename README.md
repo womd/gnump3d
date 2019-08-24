@@ -1,7 +1,10 @@
-# A gnump3d docker image based on Alpine Linux
+# A GnuMP3d docker image based on Alpine Linux
 
 ## Base Docker Image
 [Alpine](https://hub.docker.com/_/alpine) (x64)
+
+## Software
+[GnuMP3d](https://www.gnu.org/software/gnump3d/)
 
 ## Get the image from Docker Hub
 ```
