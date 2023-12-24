@@ -44,3 +44,20 @@ fullaxx/gnump3d
 ```
 docker build -t="fullaxx/gnump3d" github.com/Fullaxx/gnump3d
 ```
+
+## or run with docker compose
+```
+version: '3.8'
+services:
+  gnump3d:
+    container_name: gnump3d
+    build:
+      context: github.com/Fullaxx/gnump3d
+    image: fullaxx/gnump3d
+    volumes:
+      - /srv/docker/media:/media
+      - /srv/docker/log:/log
+      - /srv/docker/cache:/cache
+    ports:
+      - 80:8888
+```
